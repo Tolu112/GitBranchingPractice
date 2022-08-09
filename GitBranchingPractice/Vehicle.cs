@@ -7,12 +7,15 @@ namespace GitBranchingPractice
         //{
         //}
         public string Name { get; set; }
+
         public string Manufacturer { get; set; }
+
+        public int Year { get; set; }
 
         //Method - virtual gives the inheriters an option to override the method
         public virtual void Go()
         {
-            Console.WriteLine("Vehicle is going");
+            Console.WriteLine($"{Name} is going");
         }
     }
 }
